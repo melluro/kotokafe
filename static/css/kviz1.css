@@ -60,7 +60,7 @@ a{
     top: 270px;
     left: 117px;
 }
-.ImgName {
+.ImgLucky {
     position: absolute;
     top: 422px;
     left: 907px;
@@ -73,25 +73,6 @@ a{
     width: 476px;
     height: 476px;
     z-index: 0;
-}
-input{
-    position: absolute;
-    border-radius: 30px;
-    border: 2px solid #FCE6BA;
-    background: none;
-    width: 173px;
-    height: 39px;
-    top: 510px;
-    left: 964px;
-    color: #FCE6BA;
-    text-align: start;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding-left: 10px;
-    font-family: "Philosopher";
-    padding-bottom: 5px;
 }
 .Start{
     border-radius: 50px;
