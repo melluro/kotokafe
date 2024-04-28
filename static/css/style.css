@@ -73,6 +73,8 @@ header{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.2px;
+    padding-top: 9px;
+    padding-left: 27px;
 }
 .Kviz{
     width: 114px;
@@ -88,6 +90,8 @@ header{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.2px;
+    padding-top: 5px;
+    padding-left: 28px;
 }
 .MenuText{
     color: #000;

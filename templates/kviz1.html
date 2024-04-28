@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/kviz1.css">
+    <script src="/static/script/kviz1.js"></script>
+    <title>Котоквиз</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Kotokviz"><img src="/static/img/kotokviz.png" alt="котоквиз"></div>
+        <div class="MainKviz">
+            <img src="/static/img/Rectanglekviz.png" alt="обводка">
+            <p class="Hello">Привет!</p>
+            <p class="AboutKviz">Вы попали на «КОТОКВИЗ». Ваша задача – ответить на вопросы,<br> связанные с котами. Всего их будет 10.<br> 
+            Может быть, вы узнаете что-то новое для себя.</p>
+            <p class="VarningKviz">Внимание!<br> 
+            Мы призываем вас пройти квиз честно,<br> не используя сторонние источники<br> информации. А если вы хотите получить<br> за прохождение скидку 10% - обратитесь<br> к сотруднику с кодовым словом «КВИЗ».</p>
+            <img class="ImgName" src="/static/img/YourName.png" alt="Введите свое имя">
+            <img  class="CatKviz" src="/static/img/CatKviz.png" alt="Котик">
+            
+            <form class="form">
+                <input class="input" name="NameUser"  id="InputName" type="text" required placeholder="сюда..." autofocus>
+                <button class="button">НАЧАТЬ</button>
+            </form>
+            <div>
+            </div>
+            <div class="BackMain">
+                <a href="index.html"><svg class="Arow" xmlns="http://www.w3.org/2000/svg" width="40" height="16" viewBox="0 0 40 16" fill="none">
+                    <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM40 7L1 7V9L40 9V7Z" fill="#FCE6BA"/>
+                </svg></a>
+                <a href="index.html" class="TextBack">На главную</a></div>
+
+        
+        </div>
+    </div>
+    <script>
+        const input = document.querySelector('.input')
+        const button = document.querySelector('.button')
+    
+        const fetchData = async () => {
+          let response = await fetch('http://localhost:4444/', {  // url сервера
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(input.value)
+        });
+    
+            let result = await response.json();
+        }   
+    
+        button.addEventListener('click', (e) => {
+            e.preventDefault()
+    
+            if (input.value === '') {
+                return;
+            }
+            try {
+                fetchData()
+                console.log(4)
+                window.open('./kviz2.html')
+            } catch(error) {
+                console.log(error)
+            }
+            })
+    </script>
+</body>
+</html>

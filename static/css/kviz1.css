@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,*::before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: "Philosopher";
+    overflow-x: hidden;
+    background: #13130E;
+    touch-action: none;
+}
+.container{
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.Kotokviz{
+    margin: 100px auto 9px;
+    width: 807px;
+    height: 99px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.MainKviz {
+    position: relative;
+    height: 674px;
+}
+.Hello {
+    color: #FDA97E;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 31px;
+    left: 677px;
+}
+.AboutKviz {
+    color: #EFA179;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 110px;
+    left: 117px;
+}
+.VarningKviz {
+    color: #FC8A71;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 270px;
+    left: 117px;
+}
+.ImgName {
+    position: absolute;
+    top: 422px;
+    left: 907px;
+    z-index: 100;
+}
+.CatKviz {
+    position: absolute;
+    top: 177px;
+    left: 1118px;
+    width: 476px;
+    height: 476px;
+    z-index: 0;
+}
+input{
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid #FCE6BA;
+    background: none;
+    width: 173px;
+    height: 39px;
+    top: 510px;
+    left: 964px;
+    color: #FCE6BA;
+    text-align: start;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 10px;
+    font-family: "Philosopher";
+    padding-bottom: 5px;
+}
+.Start{
+    border-radius: 50px;
+    border: 2px solid #000;
+    background: #FC8B71;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 246px;
+    height: 79px;
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 12px;
+    padding-left: 33px;
+    position: absolute;
+    top: 595px;
+    left: 637px;
+}
+.BackMain {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 616px;
+}
+.TextBack {
+    color: #FCE6BA;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5px;
+}
