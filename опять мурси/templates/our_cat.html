@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/OurCat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наши коты</title>
+</head>
+<body>
+    <header>
+        <div class="HeadMenu">
+            <svg class="MenuBg" xmlns="http://www.w3.org/2000/svg" width="1678" height="111" viewBox="0 0 1678 111" fill="none">
+                <path d="M0 50C0 22.3858 22.3858 0 50 0H1628C1655.61 0 1678 22.3858 1678 50V61C1678 88.6142 1655.61 111 1628 111H50C22.3858 111 0 88.6142 0 61V50Z" fill="#B49989" fill-opacity="0.71"/>
+            </svg>
+        </div>
+        <div class="HeaderList">
+                    <div class="Logo">
+                        <a  class='LogoText' href="{{ url_for('index') }}"><img src="/static/img/textlogo.png" alt="Текст логотипа"></a>
+                        <a id='CatLogo' href="{{ url_for('index') }}"><img src="/static/img/logo.png" alt="Логотип"></a>
+                    </div>
+                    <a class='MenuText' href="#">Адрес</a>
+                    <a class='MenuText' href="{{ url_for('our_cat') }}">Наши коты</a>
+                    <a class='MenuText' href="{{ url_for('get_cat') }}">Укотовительство</a>
+                    <a class='MenuText' href="{{ url_for('reviews') }}">Отзывы</a>
+                    <a class='Bron' href="{{ url_for('price') }}">Прайс и бронь</a>
+                    <a class='Kviz' href="{{ url_for('quiz_main') }}">Квиз</a>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="TextAboutCat"><h1 class="H1AboutCat">Давайте познакомимся с нашими котами</h1></div>
+        <div class="slider-container">
+            <div class="slider">
+                {% for cat in cats %}
+                    <div class="slide">
+                        <img class="ImgCats" src="{{ cat.photo }}" alt="Slide Image">
+                        <div class="slide-content">
+                            <h2 class="NameCat">{{ cat.name }}</h2>
+                            <p class="DescriptionCat">{{ cat.about_cat }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="ButtonArrow">
+            <div class="prev" onclick="plusSlides(-1)">
+                <img class="Arrow" src="/static/img/Pred.png" alt="Previous">
+            </div>
+            <div class="next" onclick="plusSlides(1)">
+                <img class="Arrow" src="/static/img/Sled.png" alt="Next">
+            </div>
+        </div>
+    </div>
+    <script src="/static/script/OurCat.js"></script>
+</body>
+</html>
