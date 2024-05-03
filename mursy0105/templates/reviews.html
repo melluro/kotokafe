@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ОТЗЫВЫ</title>
+</head>
+<body>
+    <h1>Отзывы</h1>
+         {% for el in all_reviews %}
+                <h2>{{ el[0] }}</h2>
+                <p>{{ el[1] }}</p>
+        {% endfor %}
+    <a href="{{ url_for('add_rev') }}">написать отзыв</a>
+</body>
+</html>
