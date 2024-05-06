@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,*::before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1676px;
+    margin: 0 auto;
+}
+html{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: "Philosopher";
+    overflow-x: hidden;
+    background: #13130E;
+    touch-action: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    max-width: 1676px;
+    height: 122px;
+    margin: 0 auto;
+}
+.HeadMenu{
+    position: relative;
+}
+.MenuBg{
+    position: absolute;
+    max-width: 1676px;
+    height: 122px;
+    margin: 7px auto 0;
+    z-index: 0;
+}
+.HeaderList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 1676px;
+    height: 111px;
+    position: absolute;
+    left: 221px;
+    padding-right: 222px;
+    z-index: 10000;
+    top: 15px;
+}
+.Bron{
+    width: 227px;
+    height: 45px;
+    border-radius: 30px;
+    background: #876545;
+    border: 0;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    color: #000;
+
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 9px;
+    padding-left: 27px;
+}
+.Kviz{
+    width: 114px;
+    height: 37px;
+    border-radius: 30px;
+    background: #5D380C;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    border: 0;
+    color: #D7BDAE;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 5px;
+    padding-left: 28px;
+}
+.MenuText{
+    color: #000;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.LogoText{
+    margin-top: 15px;
+}
+#CatLogo{
+    margin-left: 5px;
+}
+.InfoGetCat{
+    position: relative;
+    margin: 120px auto 30px;
+    left: auto;
+    right: auto;
+    height: 713px;
+}
+.DGetCat {
+    position: absolute;
+    top: 15px;
+    left: 634px;
+}
+.H1GetCat {
+    color: #D8C0B2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+.MainInfo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+.CatGetCat{
+    width: 514px;
+    height: 699px;
+}
+.DInfo {
+    color: #D8C0B2;
+    text-align: center;
+    text-shadow: 10px 20px 10px #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    border: 2px solid #D8C0B2;
+    width: 1140px;
+    height: 200px;
+    padding: 32px 58px;
+    position: absolute;
+    left: 538px;
+}
+.ArrowInfo {
+    position: absolute;
+    left: 660px;
+    top: 448px;
+
+}
+.PageRules {
+}
+.Rules1 {
+    border: 2px solid #D8C0B2;
+    width: 1678px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.RulesImg1 {
+    background: url(/static/img/RulesImg1.png);
+    mix-blend-mode: luminosity;
+    width: 476px;
+    height: 476px;
+    margin-left: 87px;
+
+}
+.TextRules1 {
+    color: #D8C0B2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1011px; 
+    position: absolute;
+    top: 102px;
+    left: 524px;
+}
+.Rules2 {
+    border: 2px solid #D8C0B2;
+    width: 1678px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.RulesImg2 {
+    background: url(/static/img/RulesImg2.png);
+    mix-blend-mode: luminosity;
+    width: 248px;
+    height: 369px;
+    margin-left: 201px;
+}
+.TextRules2 {
+    color: #D8C0B2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1011px;
+    margin-right: 143px;
+}
+.Rules3 {
+    border: 2px solid #D8C0B2;
+    width: 1678px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.RulesImg3 {
+    background: url(/static/img/RulesImg3.png);
+    mix-blend-mode: luminosity;
+    width: 350px;
+    height: 295px;
+    margin-left: 150px;
+}
+.TextRules3 {
+    color: #D8C0B2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1011px;
+    margin-right: 143px;
+}
+.Rules4 {
+    border: 2px solid #D8C0B2;
+    width: 1678px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.Paws {
+    background: url(/static/img/Paws.png);
+    mix-blend-mode: luminosity;
+    width: 354px;
+    height: 354px; 
+    margin-left: 148px;
+}
+.TextRules4 {
+    color: #D8C0B2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1011px;
+    margin-right: 143px;
+}
+.VarningRules {
+    color: #D8C0B2;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1339px;
+    margin: 35px auto 120px;
+}
+.PageWhatNeed {
+    height: 1736px;
+}
+.DNeedCat {
+    margin: 0px auto;
+    width: 800px;
+}
+.H2NeedCat {
+    color: #D8C0B2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Philosopher;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+.WhatNeed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.Elem1 {
+    width: 785px;
+    height: 505px;
+
+}
+.H3Elem1 {
+    color: #D8C0B2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 25px;
+}
+.PElem1 {
+    color: #D8C0B2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+.ImgElem1 {
+    background: url(/static/img/Perenoska.png);
+    mix-blend-mode: luminosity;
+    width: 342px;
+    height: 342px;
+    margin: -15px auto 0;
+}
+.Elem2 {
+    width: 785px;
+    height: 505px;
+}
+.ImgElem2 {
+    background: url(/static/img/kogtetochka.png);
+    mix-blend-mode: luminosity;
+    width: 365px;
+    height: 174px;
+    margin: 15px auto 0;
+}
+.Elem3 {
+    width: 785px;
+    height: 505px;
+}
+.ImgElem3 {
+    background: url(/static/img/Igrushka.png);
+    mix-blend-mode: luminosity;
+    width: 279px;
+    height: 279px;
+    margin: -15px auto 0;
+}
+.Elem4 {
+    width: 785px;
+    height: 505px;
+}
+.ImgElem4 {
+    background: url(/static/img/Lejanka.png);
+    mix-blend-mode: luminosity;
+    width: 450px;
+    height: 301px;
+    margin: 0px auto;
+}
+.Elem5 {
+    width: 785px;
+    height: 505px;
+}
+.ImgElem5 {
+    background: url(/static/img/Lotok.png);
+    mix-blend-mode: luminosity;
+    width: 419px;
+    height: 330px;
+    margin: 15px auto;
+}
+.Elem6 {
+    width: 785px;
+    height: 505px;
+}
+.ImgElem6 {
+    background: url(/static/img/Miski.png);
+    mix-blend-mode: luminosity;
+    width: 338px;
+    height: 338px;
+    margin: -80px auto 0;
+}
+label{
+    display: block;
+    color: #D8C0B2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 40px;
+}
+input{
+    border-radius: 30px;
+    background: #2C2C2C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    height: 80px;
+    color: #D8C0B2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+}
+.Anketa {
+    height: 1200px;
+    width: 800px;
+    margin: 0 auto;
+}
+.DAnketa {
+    margin: 30px auto ;
+    width: 221px;
+}
+.H2Anketa {
+    color: #D8C0B2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+.AnketaForm {
+    width: 800px;
+    margin: 0 auto;
+}
+textarea{
+    border-radius: 30px;
+    background: #2C2C2C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    height: 80px;
+    color: #D8C0B2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+}
+.btn{
+    width: 265px;
+    height: 78px;
+    color: #D8C0B2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Philosopher;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    margin-left: 267px ;
+}
+footer{
+    width: 1920px;
+    height: 120px;
+    background: rgba(117, 105, 96, 1);
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+
+}
+.Number{
+    margin-left: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.NAME{
+    margin-left: 37px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Ps{
+    margin-left: 71px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Socian{
+    display: flex;
+    align-items: center;
+    margin-left: 71px;
+}
+#Tg{
+    width: 40px;
+    height: 40px;
+}
+#Inst{
+    width: 40px;
+    height: 40px;  
+    margin-left: 30px; 
+}
+#Vk{
+    width: 54px;
+    height: 54px;
+    margin-left: 24px; 
+}

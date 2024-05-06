@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/Add_Rev.css">
+    <title>Оставить отзыв</title>
+</head>
+<body>
+    <header>
+        <div class="HeadMenu">
+            <svg class="MenuBg" xmlns="http://www.w3.org/2000/svg" width="1678" height="111" viewBox="0 0 1678 111" fill="none">
+                <path d="M0 50C0 22.3858 22.3858 0 50 0H1628C1655.61 0 1678 22.3858 1678 50V61C1678 88.6142 1655.61 111 1628 111H50C22.3858 111 0 88.6142 0 61V50Z" fill="#B49989" fill-opacity="0.71"/>
+            </svg>
+        </div>
+        <div class="HeaderList">
+                    <div class="Logo">
+                        <a  class='LogoText' href="{{ url_for('index') }}"><img src="/static/img/textlogo.png" alt="Текст логотипа"></a>
+                        <a id='CatLogo' href="{{ url_for('index') }}"><img src="/static/img/logo.png" alt="Логотип"></a>
+                    </div>
+                    <a class='MenuText' href="{{ url_for('our_cat') }}">Наши коты</a>
+                    <a class='MenuText' href="{{ url_for('get_cat') }}">Укотовительство</a>
+                    <a class='MenuText' href="{{ url_for('reviews') }}">Отзывы</a>
+                    <a class='Bron' href="{{ url_for('price') }}">Прайс и бронь</a>
+                    <a class='Kviz' href="{{ url_for('quiz_main') }}">Квиз</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="DAddRev"><h2 class="H2AddRev">Напишите свой отзыв</h2></div>
+        <form class="AnketaForm" method="post">
+            <label for="user_name">Введите имя:</label>
+            <input class="inputst" type="text" name="user_name" id="user_name"><br>
+            <label for="text">Введите текст:</label>
+            <textarea name="text" id="text"></textarea><br>
+            <input type="submit" class="btn btn-success" value="ОПУБЛИКОВАТЬ">
+        </form>
+    </div>
+    <footer>
+        <div class="Number">
+            <p>+74953778899</p>
+            <p>+74953778899</p>
+        </div>
+        <div class="NAME">
+            <p>© О. С. Кривобокова, 2024</p>
+            <p>© С. А. Титова, 2024</p>       
+        </div>
+        <p class="Ps">материалы, размещенные на сайте, носят вымышленный характер и не являются реальным кафе</p>
+        <div class="Socian"><img id="Tg" src="/static/img/Telegram.png" alt="Иконка телеграм">
+        <img id="Inst" src="/static/img/Instagram.png" alt="Иконка инстаграм">
+        <img id="Vk" src="/static/img/Vk.png" alt="Иконка вконтакте"></div>
+    </footer>
+</body>
+</html>

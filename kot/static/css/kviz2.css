@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,*::before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: "Philosopher";
+    overflow-x: hidden;
+    background: #13130E;
+}
+.container{
+    width: 1520px;
+    margin: 0 auto;
+}
+.Kotokviz{
+    margin: 100px auto 9px;
+    width: 807px;
+    height: 99px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.MainKviz {
+    height: 2550px;
+    border-radius: 30px;
+    border: 3px solid #FCE6BA;
+    width: 1520px;
+}
+.Result{
+    border-radius: 50px;
+    border: 2px solid #000;
+    background: #FC8B71;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 347px;
+    height: 79px;
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 12px;
+    padding-left: 26px;
+}
+.BackMain {
+    display: flex;
+    align-items: center;
+    width: 215px;
+    margin: 20px auto;
+
+}
+.TextBack {
+    color: #FCE6BA;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5px;
+}
+.ContQuestion{
+    width: 1134px;
+    height:auto;
+    margin: 110px auto 110px auto;
+}
+.Question{
+    color: #FCE6BA;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.Answer{
+    color: #FC8A71;
+    font-family: Philosopher;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.fieldlist input[type="radio"] {
+    float: left;
+    -webkit-appearance: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: url(/static/img/RadioDC.png) left center no-repeat;
+    background-size: 20px;
+}
+.fieldlist input[type="radio"]:checked {
+    background: url(/static/img/RadioC.png) left center no-repeat;
+    width: 25px;
+    height: 25px;
+    border: 2px #FCE6BA;
+}
+.fieldlist{
+    display:flex;
+    align-items: center;
+}
+.Send{
+    color: #000;
+    font-family: Philosopher;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background: #FC8B71;
+    width: 347px;
+    height: 79px;
+}
+.SendDiv{
+    margin: 100px auto 0 auto;
+    width: 347px;
+    height: 79px;
+
+}

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,*::before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1676px;
+    margin: 0 auto;
+}
+html{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: "Philosopher";
+    overflow-x: hidden;
+    background: #13130E;
+    touch-action: none;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+header{
+    max-width: 1676px;
+    height: 122px;
+    margin: 0 auto;
+}
+.HeadMenu{
+    position: relative;
+}
+.MenuBg{
+    position: absolute;
+    max-width: 1676px;
+    height: 122px;
+    margin: 7px auto 0;
+    z-index: 0;
+}
+.HeaderList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 1676px;
+    height: 111px;
+    position: absolute;
+    left: 221px; 
+    padding-right: 222px;
+    z-index: 10000;
+    top: 15px;
+}
+.Bron{
+    width: 227px;
+    height: 45px;
+    border-radius: 30px;
+    background: #876545;
+    border: 0;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    color: #000;
+
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 9px;
+    padding-left: 27px;
+}
+.Kviz{
+    width: 114px;
+    height: 37px;
+    border-radius: 30px;
+    background: #5D380C;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    border: 0;
+    color: #D7BDAE;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 5px;
+    padding-left: 28px;
+}
+.MenuText{
+    color: #000;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.LogoText{
+    margin-top: 15px;
+}
+#CatLogo{
+    margin-left: 5px;
+}
+.DRev {
+    margin: 90px auto;
+    width: 160px;
+}
+.H2Rev {
+    color: #D8C0B2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+.PageRev {
+    /* display: flex;
+    flex-wrap: wrap; */
+    height: auto;
+    /* justify-content: space-between; */
+}
+.ElemRev {
+
+    width: 1678px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.H3Name {
+    color: #FC8A71;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+
+}
+.DName{
+    margin: 38px 0 20px 20px;
+    stroke-width: 1px;
+    stroke: #FC8A71;
+}
+.TextRev {
+    color: #D8C0B2;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 1px solid #A6BBF0;
+    padding: 40px 20px 40px;
+}
+.GetRev {
+    width: 271px;
+    height: 62px;
+    padding: 13px 12px;
+    border-radius: 30px;
+    background: rgba(166, 187, 240, 0.50);
+    margin: 50px auto 50px;
+}
+.AGetRev {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* margin: 13px 12px; */
+}
+footer{
+    width: 1920px;
+    height: 120px;
+    background: rgba(117, 105, 96, 1);
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+
+}
+.Number{
+    margin-left: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.NAME{
+    margin-left: 37px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Ps{
+    margin-left: 71px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Socian{
+    display: flex;
+    align-items: center;
+    margin-left: 71px;
+}
+#Tg{
+    width: 40px;
+    height: 40px;
+}
+#Inst{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+#Vk{
+    width: 54px;
+    height: 54px;
+    margin-left: 24px;
+}

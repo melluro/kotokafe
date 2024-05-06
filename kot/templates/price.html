@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/price.css">
+    <title>Прайс и бронь</title>
+</head>
+<body>
+    <header>
+        <div class="HeadMenu">
+            <svg class="MenuBg" xmlns="http://www.w3.org/2000/svg" width="1678" height="111" viewBox="0 0 1678 111" fill="none">
+                <path d="M0 50C0 22.3858 22.3858 0 50 0H1628C1655.61 0 1678 22.3858 1678 50V61C1678 88.6142 1655.61 111 1628 111H50C22.3858 111 0 88.6142 0 61V50Z" fill="#B49989" fill-opacity="0.71"/>
+            </svg>
+        </div>
+        <div class="HeaderList">
+                    <div class="Logo">
+                        <a  class='LogoText' href="{{ url_for('index') }}"><img src="/static/img/textlogo.png" alt="Текст логотипа"></a>
+                        <a id='CatLogo' href="{{ url_for('index') }}"><img src="/static/img/logo.png" alt="Логотип"></a>
+                    </div>
+                    <a class='MenuText' href="{{ url_for('our_cat') }}">Наши коты</a>
+                    <a class='MenuText' href="{{ url_for('get_cat') }}">Укотовительство</a>
+                    <a class='MenuText' href="{{ url_for('reviews') }}">Отзывы</a>
+                    <a class='Bron' href="{{ url_for('price') }}">Прайс и бронь</a>
+                    <a class='Kviz' href="{{ url_for('quiz_main') }}">Квиз</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="PagePrice">
+            <div class="Back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1733" height="1227" viewBox="0 0 1733 1227" fill="none">
+                    <g filter="url(#filter0_f_2277_41)">
+                        <path d="M80 254.84C80 219 126.03 204.318 146.782 233.54V233.54C161.786 254.668 193.347 254.076 207.548 232.401L253.699 161.959C276.726 126.813 330.205 134.02 343.107 174.007L357 217.064C366.937 247.862 403.067 261.25 430.673 244.365L511.99 194.627C519.844 189.823 528.872 187.281 538.079 187.281H605.926C621.14 187.281 635.525 194.207 645.013 206.1L730.534 313.303C757.979 347.707 813.276 332.432 819.17 288.818L827.488 227.264C829.404 213.091 837.297 200.416 849.173 192.445L1003.57 88.8133C1027.04 73.0585 1058.9 79.8815 1073.86 103.868L1141.9 212.954C1143.3 215.196 1144.52 217.545 1145.54 219.98L1161.74 258.372C1180.75 303.437 1246.48 297.217 1256.7 249.386L1276.56 156.464C1286.66 109.197 1351.29 102.345 1371.07 146.442L1387.9 183.938C1401.79 214.88 1441.79 223.315 1466.99 200.612L1569.53 108.214C1601.7 79.2264 1653 102.056 1653 145.358V1097C1653 1124.61 1630.61 1147 1603 1147H130C102.386 1147 80 1124.61 80 1097V254.84Z" fill="#A6BBF0" fill-opacity="0.49"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_2277_41" x="0" y="0.322296" width="1733" height="1226.68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_2277_41"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div class="TimeCafe">
+                ТАЙМ-КАФЕ
+            </div>
+            <div class="Price">
+                <h2 class="H2TimeCafe">Котокафе работает в формате тайм-кафе</h2>
+                <p class="PTimeCafe">Вы платите только за время, проведённое у нас</p>
+                <p class="Sale">Стоимость пребывания на одного посетителя: <br>- Первый час: 480 рублей (8 р./мин)<br>- Второй и третий часы: по 300 рублей (5 р./мин)<br>- Четвёртый и последующие часы не тарифицируются, то<br> есть стоп-чек будет равен 1080 р.
+                    <br><br>Скидки:<br>- День рождения: скидка 50% для именинника/именинницы<br> и 20% гостям<br>- 20% скидка по предъявлению студенческого билета<br>- Для детей до 5-ти лет посещение бесплатно<br>*скидки не суммируются</p>
+            </div>
+            <div class="BronNum">
+                <p>Для бронрования позвоните по этому номеру:</p>
+                <p>+74953778899</p>
+            </div>
+            <svg class="Line" xmlns="http://www.w3.org/2000/svg" width="1189" height="2" viewBox="0 0 1189 2" fill="none">
+                <path d="M1189 1H0" stroke="#A6BBF0"/>
+            </svg>
+        </div>
+    </div>
+    <footer>
+        <div class="Number">
+            <p>+74953778899</p>
+            <p>+74953778899</p>
+        </div>
+        <div class="NAME">
+            <p>© О. С. Кривобокова, 2024</p>
+            <p>© С. А. Титова, 2024</p>       
+        </div>
+        <p class="Ps">материалы, размещенные на сайте, носят вымышленный характер и не являются реальным кафе</p>
+        <div class="Socian"><img id="Tg" src="/static/img/Telegram.png" alt="Иконка телеграм">
+        <img id="Inst" src="/static/img/Instagram.png" alt="Иконка инстаграм">
+        <img id="Vk" src="/static/img/Vk.png" alt="Иконка вконтакте"></div>
+    </footer>
+</body>
+</html>

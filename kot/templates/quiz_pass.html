@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/kviz2.css">
+    <title>Котоквиз</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Kotokviz"><img src="/static/img/kotokviz.png" alt="котоквиз"></div>
+        <div class="MainKviz">
+            <div class="ContQuestion">
+                <form method="post">
+                    {% for question in questions %}
+                    <h3 class="Question">{{ loop.index }}: {{ question.question }}</h3>
+                    {% for option in question.options %}
+                    <div class="fieldlist">
+                        <input  type="radio" name="{{ question.question }}" value="{{ option }}">
+                        <span class="Answer">{{ option }}</span>
+                    </div>
+                    {% endfor %}
+                    {% endfor %}<br>
+                    <div class="SendDiv"><input class="Send" type="submit" value="РЕЗУЛЬТАТЫ"></div>
+                </form><br>
+                <div class="BackMain">
+                    <a href="index.html"><svg class="Arow" xmlns="http://www.w3.org/2000/svg" width="40" height="16" viewBox="0 0 40 16" fill="none">
+                        <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM40 7L1 7V9L40 9V7Z" fill="#FCE6BA"/>
+                    </svg></a>
+                    <a href="{{ url_for('index') }}" class="TextBack">На главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
