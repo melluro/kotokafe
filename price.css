@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,*::before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1676px;
+    margin: 0 auto;
+}
+html{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: "Philosopher";
+    overflow-x: hidden;
+    background: #13130E;
+    touch-action: none;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+header{
+    max-width: 1676px;
+    height: 122px;
+    margin: 0 auto;
+}
+.HeadMenu{
+    position: relative;
+}
+.MenuBg{
+    position: absolute;
+    max-width: 1676px;
+    height: 122px;
+    margin: 7px auto 0;
+    z-index: 0;
+}
+.HeaderList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    width: 1676px;
+    height: 111px;
+    position: absolute;
+    left: 221px; 
+    padding-right: 222px;
+    z-index: 10000;
+    top: 15px;
+}
+.Bron{
+    width: 227px;
+    height: 45px;
+    border-radius: 30px;
+    background: #876545;
+    border: 0;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    color: #000;
+
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 9px;
+    padding-left: 27px;
+}
+.Kviz{
+    width: 114px;
+    height: 37px;
+    border-radius: 30px;
+    background: #5D380C;
+    box-shadow: 10px 6px 20px 0px #3C250B;
+    border: 0;
+    color: #D7BDAE;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding-top: 5px;
+    padding-left: 28px;
+}
+.MenuText{
+    color: #000;
+    font-family: "Philosopher";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.LogoText{
+    margin-top: 15px;
+}
+#CatLogo{
+    margin-left: 5px;
+}
+
+.TimeCafe{
+    color: #D8C0B2;
+    text-shadow: 74px 58px 10.6px rgba(0, 0, 0, 0.25);
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 83px;
+    left: 214px;
+}
+
+.PagePrice {
+    position: relative;
+    height: 1433px;
+}
+.Back {
+    position: absolute;
+    top: 71px;
+}
+.Price {
+    width: 1227px;
+    position: relative;
+    top: 389px;
+    height: 769px;
+    left: 243px;
+}
+.H2TimeCafe {
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+
+}
+.PTimeCafe {
+    color: #D8C0B2;
+    text-align: center;
+    margin: 10px auto 85px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+.Sale {
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+
+}
+.BronNum{
+    color: #D8C0B2;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    width: 1189px;
+    position: absolute;
+    left: 210px;
+    display: flex;
+    top: 1240px;
+    text-align: center;
+    justify-content: space-around;
+}
+.Line{
+    position: absolute;
+    top: 1296px;
+    left: 205px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 1920px;
+    height: 120px;
+    background: rgba(117, 105, 96, 1);
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+
+}
+.Number{
+    margin-left: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.NAME{
+    margin-left: 37px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Ps{
+    margin-left: 71px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Socian{
+    display: flex;
+    align-items: center;
+    margin-left: 71px;
+}
+#Tg{
+    width: 40px;
+    height: 40px;
+}
+#Inst{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+#Vk{
+    width: 54px;
+    height: 54px;
+    margin-left: 24px;
+}
